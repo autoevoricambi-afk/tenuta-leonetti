@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenuta Leonetti | Olio Extravergine di Oliva</title>
+  <meta name="description" content="Tenuta Leonetti - Latta da 5 litri di olio extravergine di oliva. Spedizione gratuita in tutta Italia. Ordina direttamente su WhatsApp." />
+  <meta property="og:title" content="Tenuta Leonetti" />
+  <meta property="og:description" content="Olio Extravergine di Oliva - 5 Litri - Spedizione gratuita in tutta Italia" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/latta-5lt.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Tenuta Leonetti home">
+        <img src="assets/logo.png" alt="Logo Tenuta Leonetti" class="brand-logo" />
+      </a>
+      <nav class="menu">
+        <a href="#prodotto">Prodotto</a>
+        <a href="#offerta">Offerta</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Spedizione gratuita in tutta Italia</span>
+          <h1>Olio extravergine di oliva in latta da 5 litri, firmato <span>Tenuta Leonetti</span>.</h1>
+          <p class="hero-text">
+            Un sito pulito, premium e diretto alla vendita. Il cliente seleziona la quantità,
+            vede subito il totale e invia l’ordine su WhatsApp.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="chip">Latta 5 L</div>
+            <div class="chip">€75,00 cad.</div>
+            <div class="chip">-10% da 5 pezzi</div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#offerta">Ordina ora</a>
+            <a class="btn btn-secondary" href="https://wa.me/393273008506?text=Buongiorno%20Valerio%20Leonetti%2C%20vorrei%20ricevere%20informazioni%20sull%27olio%20Tenuta%20Leonetti." target="_blank" rel="noopener">Contatta su WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="product-frame">
+            <img src="assets/latta-5lt.png" alt="Latta da 5 litri Tenuta Leonetti" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <strong>Spedizione gratuita</strong>
+          <span>In tutta Italia</span>
+        </div>
+        <div class="trust-item">
+          <strong>Ordine diretto</strong>
+          <span>Su WhatsApp in pochi secondi</span>
+        </div>
+        <div class="trust-item">
+          <strong>Formato convenienza</strong>
+          <span>Latta da 5 litri</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="prodotto">
+      <div class="container section-grid">
+        <div class="section-image">
+          <img src="assets/latta-5lt.png" alt="Confezione premium Tenuta Leonetti 5 litri" />
+        </div>
+
+        <div class="section-content">
+          <span class="section-tag">Prodotto</span>
+          <h2>Tenuta Leonetti — 5 Litri</h2>
+          <p>
+            Pagina costruita per vendere bene online: design ordinato, immagine premium,
+            offerta chiara e contatto immediato.
+          </p>
+
+          <ul class="feature-list">
+            <li>Latta da 5 litri</li>
+            <li>Prezzo unitario: €75,00</li>
+            <li>Spedizione gratuita in tutta Italia</li>
+            <li>Sconto 10% per ordini da 5 latte in su</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offerta">
+      <div class="container">
+        <div class="offer-card">
+          <div class="offer-copy">
+            <span class="section-tag">Offerta diretta</span>
+            <h2>Configura il tuo ordine</h2>
+            <p>
+              Se acquisti <strong>5 o più latte</strong>, il sito applica automaticamente il
+              <strong>10% di sconto</strong>.
+            </p>
+          </div>
+
+          <div class="calculator">
+            <label for="qty">Quantità</label>
+            <div class="qty-row">
+              <button type="button" class="qty-btn" id="minusBtn" aria-label="Riduci quantità">−</button>
+              <input id="qty" type="number" min="1" step="1" value="1" />
+              <button type="button" class="qty-btn" id="plusBtn" aria-label="Aumenta quantità">+</button>
+            </div>
+
+            <div class="price-box">
+              <div class="price-line">
+                <span>Prezzo unitario</span>
+                <strong id="unitPrice">€75,00</strong>
+              </div>
+              <div class="price-line">
+                <span>Sconto</span>
+                <strong id="discountValue">Nessuno</strong>
+              </div>
+              <div class="price-line total">
+                <span>Totale ordine</span>
+                <strong id="totalPrice">€75,00</strong>
+              </div>
+            </div>
+
+            <a id="whatsappOrder" class="btn btn-primary full" href="#" target="_blank" rel="noopener">Invia ordine su WhatsApp</a>
+            <p class="small-note">Contatto: <strong>Valerio Leonetti</strong> — 327 300 8506</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contatti">
+      <div class="container contact-card">
+        <div>
+          <span class="section-tag">Contatti</span>
+          <h2>Ordini e informazioni</h2>
+          <p>Per il momento il contatto diretto è disponibile su WhatsApp.</p>
+        </div>
+        <div class="contact-box">
+          <div class="contact-name">Valerio Leonetti</div>
+          <a class="contact-phone" href="tel:+393273008506">327 300 8506</a>
+          <a class="btn btn-secondary full" href="https://wa.me/393273008506" target="_blank" rel="noopener">Apri WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Tenuta Leonetti logo" class="footer-logo" />
+      <p>© <span id="year"></span> Tenuta Leonetti — Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
